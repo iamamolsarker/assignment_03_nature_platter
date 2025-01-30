@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
+    <!-- Sora Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'brand-color': 'blue',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    <div class="bg-brand-color text-white">Hello World</div>
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "main-text-color": "#111111",
+              "main-green-color": "#179800",
+            },
+            fontFamily: {
+              sora: ["Sora", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora">
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+      <!-- Navbar -->
+      <nav class="max-w-[1320px] py-6 mx-auto flex items-center">
+        <div class="flex-1">
+          <a href="#"><img src="images/logo-header.png" alt=""  /></a>
+        </div>
+        <div class="flex-1">
+          <ul class="flex gap-5 justify-center font-normal text-xl text-main-text-color">
+            <li class="hover:text-main-green-color"><a href="#">Product</a></li>
+            <li class="hover:text-main-green-color"><a href="#">Services</a></li>
+            <li class="hover:text-main-green-color"><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-1 justify-end gap-6">
+            <div class="flex gap-5 items-center">
+                <img src="images/search.png" alt="">
+                <img src="images/cart.png" alt="">
+            </div>
+            <div class="flex items-center gap-4 text-xl">
+                <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-main-text-color hover:text-white hover:bg-main-green-color">Login</a>
+                <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-white bg-main-green-color hover:text-main-text-color hover:bg-transparent">Register</a>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
