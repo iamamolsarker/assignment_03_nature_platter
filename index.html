@@ -6,8 +6,19 @@
     <title>Nature's Platter</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'brand-color': 'blue',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <div class="bg-brand-color text-white">Hello World</div>
 </body>
 </html>
