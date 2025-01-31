@@ -37,18 +37,18 @@
   <body class="font-sora">
     <header class="bg-gradient-to-b from-white to-secondary-color">
       <!-- Navbar -->
-      <nav class="max-w-[1320px] py-6 mx-auto flex items-center">
-        <div class="flex-1">
+      <nav class="lg:max-w-[1320px] md:max-w-full py-6 mx-auto flex items-center px-5 border-b border-main-green-color md:border-b-0">
+        <div class="flex-1 basis-1/3 lg:basis-0">
           <a href="#"><img src="images/logo-header.png" alt=""  /></a>
         </div>
-        <div class="flex-1">
+        <div class="lg:flex-1 hidden xl:block ">
           <ul class="flex gap-5 justify-center font-normal text-xl text-main-text-color">
             <li class="hover:text-main-green-color"><a href="#">Product</a></li>
             <li class="hover:text-main-green-color"><a href="#">Services</a></li>
             <li class="hover:text-main-green-color"><a href="#">Contact us</a></li>
           </ul>
         </div>
-        <div class="flex flex-1 justify-end gap-6">
+        <div class="md:flex flex-1 justify-end gap-6 basis-2/3 lg:basis-0 hidden ">
             <div class="flex gap-5 items-center">
                 <img src="images/search.png" alt="">
                 <img src="images/cart.png" alt="">
@@ -58,11 +58,16 @@
                 <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-white bg-main-green-color hover:text-main-text-color hover:bg-transparent">Register</a>
             </div>
         </div>
+        <div class="flex flex-col gap-1 pl-5 xl:hidden">
+          <span class="w-7 h-1 bg-main-green-color"></span>
+          <span class="w-7 h-1 bg-main-green-color"></span>
+          <span class="w-7 h-1 bg-main-green-color"></span>
+        </div>
       </nav>
       <!-- Banner section -->
-       <section class="mt-20 flex flex-col items-center gap-8">
-        <div class="w-[830px] mx-auto">
-          <h1 class="text-[56px] font-semibold leading-snug text-main-text-color text-center mb-8">Freshness <span class="text-main-green-color">You Can<br>
+       <section class="mt-20 flex flex-col items-center gap-8 px-5">
+        <div class="w-full lg:w-[830px] mx-auto">
+          <h1 class=" text-3xl md:text-4xl lg:text-[56px] font-semibold md:leading-snug text-main-text-color text-center mb-8">Freshness <span class="text-main-green-color">You Can<br>
             Count</span> On, Prices You’ll Love!</h1>
           <p class="text-main-text-color text-xl text-center opacity-80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
         </div>
@@ -73,40 +78,40 @@
     </header>
     <main>
       <!-- Explore Receipe Section -->
-       <section class="py-20 bg-gradient-to-b from-white to-[#1798001a]">
+       <section class="py-20 bg-gradient-to-b from-white to-[#1798001a] px-5">
         <div class="max-w-[1320px] mx-auto flex flex-col gap-16">
-          <div class="w-[830px] mx-auto text-center flex flex-col items-center gap-6">
-            <h2 class="text-5xl text-main-text-color font-semibold">Discover Our Latest <span class="text-main-green-color">Culinary Creations!</span></h2>
+          <div class="max-w-[830px] mx-auto text-center flex flex-col items-center gap-6">
+            <h2 class="text-2xl md:text-3xl lg:text-5xl text-main-text-color font-semibold">Discover Our Latest <span class="text-main-green-color">Culinary Creations!</span></h2>
             <p class="text-main-text-color text-xl opacity-80">Get ready to tantalize your taste buds with our newest, mouthwatering recipes! From quick and easy meals to gourmet delights, we’ve crafted something special just for you.</p>
             <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-white font-semibold bg-main-green-color hover:text-main-text-color hover:bg-transparent">Explore Now</a>
           </div>
-          <div class="flex gap-6 items-center">
-            <div class="flex-1 basis-[40%]">
+          <div class="flex gap-6 lg:items-center flex-col lg:flex-row">
+            <div class="flex-1 basis-full lg:basis-[40%]">
               <img src="images/stake.jpg" alt="" class="rounded-2xl w-full h-[345px] object-cover ">
             </div>
             <div class="flex flex-col gap-5 items-start flex-1 basis-[60%]">
-              <h2 class="text-4xl text-main-green-color font-semibold">Perfectly Juicy Steak: <span class="text-main-text-color">A Steakhouse Experience at Home </span></h2>
+              <h2 class="text-2xl lg:text-4xl text-main-green-color font-semibold">Perfectly Juicy Steak: <span class="text-main-text-color">A Steakhouse Experience at Home </span></h2>
               <p class="text-main-text-color text-lg opacity-80">Craving a tender, flavorful steak with a beautifully seared crust? This recipe will guide you to cook a steak just like the pros. Whether you love it rare or well-done, our step-by-step method ensures perfection every time. Serve it with your favorite sides and enjoy a restaurant-quality meal in the comfort of your home!</p>
               <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-main-green-color font-semibold hover:text-white hover:bg-main-green-color">Try Now!</a>
             </div>
           </div>
-          <div class="flex gap-6 items-center">
+          <div class="flex gap-6 lg:items-center flex-col-reverse lg:flex-row">
             <div class="flex flex-col gap-5 items-start flex-1 basis-[60%]">
-              <h2 class="text-4xl text-main-green-color font-semibold">Juicy & Flavorful Grilled Chicken – <span class="text-main-text-color">Perfect Every Time!</span></h2>
+              <h2 class="text-2xl lg:text-4xl text-main-green-color font-semibold">Juicy & Flavorful Grilled Chicken – <span class="text-main-text-color">Perfect Every Time!</span></h2>
               <p class="text-main-text-color text-lg opacity-80">Fire up the grill and get ready for the most tender, juicy, and perfectly seasoned grilled chicken! Whether you're craving a light and healthy meal or a protein-packed feast, this recipe delivers smoky, charred perfection in every bite. Serve it with fresh veggies, a side of creamy garlic sauce, or in a wrap for an unbeatable meal!</p>
               <a href="#" class="py-3 px-8 border border-solid border-main-green-color rounded-lg text-main-green-color font-semibold hover:text-white hover:bg-main-green-color">Try Now!</a>
             </div>
-            <div class="flex-1 basis-[40%]">
+            <div class="flex-1 basis-full lg:basis-[40%]">
               <img src="images/grilled-chicken.jpg" alt="" class="rounded-2xl w-full h-[345px] object-cover ">
             </div>
           </div>
         </div>
        </section>
        <!-- Services -->
-        <section class="py-32">
+        <section class="py-12 lg:py-32 px-5">
           <div class="max-w-[1320px] mx-auto">
-            <h2 class="text-4xl text-main-green-color font-semibold">Services</h2>
-            <div class="mt-12 flex gap-6">
+            <h2 class="text-2xl md:text-4xl text-main-green-color font-semibold">Services</h2>
+            <div class="mt-12 flex flex-col lg:flex-row gap-6">
               <div class="flex-1 flex flex-col gap-5 items-center text-center p-8 bg-secondary-color rounded-2xl">
                 <img src="images/service.png" alt="">
                 <h3 class="text-2xl font-semibold text-main-text-color">24/7 Services </h3>
@@ -126,149 +131,149 @@
           </div>
         </section>
         <!-- Popular Product -->
-         <section class="py-32 bg-secondary-color">
+         <section class="py-12 lg:py-32 bg-secondary-color px-5">
           <div class="max-w-[1320px] mx-auto">
-            <h2 class="text-4xl text-main-green-color font-semibold">Popular Products</h2>
-            <div class="mt-12 grid grid-cols-5 grid-rows-3 gap-5">
-              <div class="col-start-1 col-end-3 row-start-1 row-end-4 bg-gradient-to-br from-[#53DB3A] to-white rounded-xl pt-12 px-8 h-96 flex flex-col items-start gap-5 relative">
+            <h2 class="text-2xl md:text-4xl text-main-green-color font-semibold">Popular Products</h2>
+            <div class="mt-12 grid grid-cols-2 min-[1315px]:grid-cols-5 min-[1315px]:grid-rows-3 gap-3 sm:gap-5">
+              <div class="col-start-1 -col-end-1 min-[1315px]:col-start-1 min-[1315px]:col-end-3 min-[1315px]:row-start-1 min-[1315px]:row-end-4 bg-gradient-to-br from-[#53DB3A] to-white rounded-xl pt-12 px-8 h-96 flex flex-col items-start gap-5 relative">
                 <h3 class="text-3xl font-semibold text-white">30% off</h3>
                 <p class="text-main-text-color opacity-70">Discover a world of treats, toys, and essentials handpicked for </p>
                 <a href="#" class="inline-block py-2 px-5 rounded-md text-main-text-color font-semibold bg-white hover:text-white hover:bg-main-text-color">Buy Now</a>
-                <img src="images/vegetable-offer.png" alt="" class="absolute bottom-0 right-0 w-[53%]">
+                <img src="images/vegetable-offer.png" alt="" class="absolute bottom-0 right-0 max-w-[70%] sm:max-w-full min-[1315px]:w-[53%]">
               </div>
               <!-- Product 1 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/onion.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/onion.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Onion 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Onion 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 2 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/tomato.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/tomato.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col  text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Tomato 50g</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Tomato 50g</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 3 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/potato.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/potato.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Potato 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Potato 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 4 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/tomato.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/tomato.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Tomato 50g</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Tomato 50g</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 5 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/onion.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/onion.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Onion 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Onion 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 6 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/onion.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/onion.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Onion 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Onion 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 7 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/potato.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/potato.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Potato 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Potato 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 8 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/tomato.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/tomato.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Tomato 50G</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Tomato 50G</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
               <!-- Product 9 -->
-              <div class="flex bg-white p-4 items-center rounded-xl gap-3">
-                <div class="bg-secondary-color flex items-center justify-center rounded-lg p-1">
-                  <img src="images/onion.png" alt="">
+              <div class="flex bg-white p-2 sm:p-4 items-center rounded-xl gap-1 sm:gap-3">
+                <div class="bg-secondary-color flex items-center justify-center rounded-lg sm:p-1">
+                  <img src="images/onion.png" alt="" class="max-w-[45px] sm:max-w-full">
                 </div>
                 <div class="flex flex-col text-main-text-color">
                   <div class="flex items-center gap-2">
-                    <img src="images/star.png" alt="">
-                    <span>4.5</span>
+                    <img src="images/star.png" alt="" class="max-w-[12px] sm:max-w-full">
+                    <span class="text-[12px] sm:text-base">4.5</span>
                   </div>
-                  <h3 class="font-medium text-lg">Onion 1KG</h3>
-                  <p class="font-medium">$39.99</p>
+                  <h3 class="font-medium text-[12px] sm:text-lg">Onion 1KG</h3>
+                  <p class="font-medium text-[11px] sm:text-base">$39.99</p>
                 </div>
               </div>
             </div>
           </div>
          </section>
          <!-- New Arrival & Offers -->
-         <section class="py-32">
+         <section class="py-12 lg:py-32 px-5">
           <div class="max-w-[1320px] mx-auto">
-            <h2 class="text-4xl text-main-green-color font-semibold">New Arrival & Offers</h2>
+            <h2 class=" text-2xl md:text-4xl text-main-green-color font-semibold">New Arrival & Offers</h2>
             <div class="mt-12 flex gap-6">
              <div class="flex items-center justify-between flex-1 basis-3/5 bg-[#115414] pt-8 pl-10 rounded-3xl">
               <div class="flex flex-col items-start gap-6">
@@ -294,7 +299,7 @@
           </div>
         </section>
         <!-- Newsletter Section -->
-         <section class=" py-6 bg-gradient-to-b from-white from-50% to-main-green-color to-50%">
+         <section class=" py-6 px-5 bg-gradient-to-b from-white from-50% to-main-green-color to-50% ">
           <div class="max-w-[1320px] mx-auto bg-secondary-color py-14 px-24 rounded-3xl flex items-center">
             <div class="flex-1 basis-1/2">
               <img src="images/vegetable-busket.png" alt="">
@@ -308,7 +313,7 @@
           </div>
          </section>
     </main>
-    <footer class="py-32 bg-main-green-color">
+    <footer class="py-32 bg-main-green-color px-5">
       <div class="max-w-[1320px] mx-auto flex ">
         <div class="flex-1 basis-1/2">
           <img src="images/logo-footer.png" alt="">
