@@ -20,6 +20,7 @@
             colors: {
               "main-text-color": "#111111",
               "main-green-color": "#179800",
+              "secondary-color": "#EFEBE3",
             },
             fontFamily: {
               sora: ["Sora", "sans-serif"],
@@ -30,7 +31,7 @@
     </script>
   </head>
   <body class="font-sora">
-    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-white to-secondary-color">
       <!-- Navbar -->
       <nav class="max-w-[1320px] py-6 mx-auto flex items-center">
         <div class="flex-1">
@@ -120,6 +121,29 @@
             </div>
           </div>
         </section>
+        <!-- Popular Product -->
+         <section class="py-32 bg-secondary-color">
+          <div class="max-w-[1320px] mx-auto">
+            <h2 class="text-4xl text-main-green-color font-semibold">Popular Products</h2>
+            <div class="mt-12 grid grid-cols-5 grid-rows-3 gap-6">
+              <div class="col-start-1 col-end-3 row-start-1 row-end-4 bg-gradient-to-br from-[#53DB3A] to-white rounded-xl pt-12 px-8 h-96 flex flex-col items-start gap-5 relative">
+                <h3 class="text-3xl font-semibold text-white">30% off</h3>
+                <p class="text-main-text-color opacity-70">Discover a world of treats, toys, and essentials handpicked for </p>
+                <a href="#" class="inline-block py-2 px-5 rounded-md text-main-text-color font-semibold bg-white hover:text-white hover:bg-main-text-color">Buy Now</a>
+                <img src="images/vegetable-offer.png" alt="" class="absolute bottom-0 right-0">
+              </div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+         </section>
     </main>
     <footer></footer>
   </body>
