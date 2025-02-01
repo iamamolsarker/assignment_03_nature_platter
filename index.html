@@ -33,6 +33,17 @@
         },
       };
     </script>
+    <style>
+      @keyframes color-change {
+  0%   {color: #179800;}
+  25%  {color: #ECE852;}
+  50%  {color: #FB4141;}
+  100% {color: #FFC145;}
+}
+.color-changing{
+  animation: color-change 5s linear infinite alternate;
+}
+    </style>
   </head>
   <body class="font-sora">
     <header class="bg-gradient-to-b from-white to-secondary-color">
@@ -67,12 +78,14 @@
       <!-- Banner section -->
        <section class="mt-20 flex flex-col items-center gap-8 px-5">
         <div class="w-full lg:w-[830px] mx-auto">
-          <h1 class=" text-3xl md:text-4xl lg:text-[56px] font-semibold md:leading-snug text-main-text-color text-center mb-8">Freshness <span class="text-main-green-color">You Can<br>
+          <h1 class=" text-3xl md:text-4xl lg:text-[56px] font-semibold md:leading-snug text-main-text-color text-center mb-8">Freshness <span class="text-main-green-color color-changing">You Can<br>
             Count</span> On, Prices You’ll Love!</h1>
           <p class="text-main-text-color text-xl text-center opacity-80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
         </div>
-        <div>
+        <div class="relative">
           <img src="images/hero-vegetables.png" alt="">
+          <img src="images/brocolli.png" alt="" class=" animate-spin absolute top-10 w-[10%]">
+          <img src="images/leaf-2.png" alt="" class=" animate-bounce absolute top-16 right-12 w-[7%]">
         </div>
        </section>
     </header>
@@ -275,21 +288,21 @@
           <div class="max-w-[1320px] mx-auto">
             <h2 class=" text-2xl md:text-4xl text-main-green-color font-semibold">New Arrival & Offers</h2>
             <div class="mt-12 flex flex-col lg:flex-row gap-6">
-             <div class="flex items-center justify-between flex-1 basis-3/5 bg-[#115414] pt-4 pl-4 md:pt-8 md:pl-10 rounded-3xl min-h-[250px]">
+             <div class="flex items-center justify-between flex-1 basis-3/5 bg-[#115414] pt-4 pl-4 md:pt-8 md:pl-10 rounded-3xl min-h-[290px]">
               <div class="flex flex-col items-start gap-6">
                 <img src="images/dawat-logo.png" alt="">
                 <a href="#" class="px-3 py-2 lg:px-7 lg:py-4 inline-block bg-[#63B76D] text-white xl:text-[22px] 2xl:text-2xl rounded-xl">Cook Exotic Dishes</a>
-                <h2 class="text-xl xl:text-4xl text-white ">UP to <span class="font-bold">20% OFF</span></h2>
+                <h2 class="text-xl xl:text-3xl text-white ">UP to <span class="font-bold">20% OFF</span></h2>
               </div>
               <div class="max-w-[40%]">
                 <img src="images/dawat-mock-up.png" alt="">
               </div>
              </div>
-             <div class="flex items-center justify-between flex-1 basis-2/5 bg-[#102861] pt-4 pl-5 pr-3 rounded-3xl min-h-[250px]">
+             <div class="flex items-center justify-between flex-1 basis-2/5 bg-[#102861] pt-4 pl-5 pr-3 rounded-3xl min-h-[290px]">
               <div class="flex flex-col items-start gap-4 flex-1">
                 <img src="images/india-gate-logo.png" alt="">
                 <a href="#" class="px-3 py-2 lg:px-4 lg:py-4 xl:px-6 inline-block bg-[#2A4D97] text-white xl:text-[22px] 2xl:text-2xl rounded-xl">World’s No.1 Rice</a>
-                <h2 class="text-xl xl:text-4xl text-white ">UP to <span class="font-bold">40% OFF</span></h2>
+                <h2 class="text-xl xl:text-3xl text-white ">UP to <span class="font-bold">40% OFF</span></h2>
               </div>
               <div class="max-w-[40%]">
                 <img src="images/india-gate-mock-up.png" alt="">
